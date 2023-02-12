@@ -1,42 +1,116 @@
-<html>
-     <head>
-          <meta charset="UTF-8" />
-          <meta name="description" content="This is a great website" />
-          <title>Riikka Kokko</title>
-       
-          <h1> Tämä on minun nettisivuni etusivu</h1>
-       <pstyle="color:red;"> Tervetuloa tutustumaan nettisivuihini </p>
-       
-     </head>
-    <body>
-       <header>
-          Header
-          <nav>
-               Valikko
-          </nav>
-     </header>
-     <main>
-          Etusivu
-          <article>
-               Artikkeli
-               <section>
-                    Osa1
-                    <aside>
-                         aside
-                    </aside>
-               </section>
-               <section>
-                    Section 2
-               </section>
-          </article>
-     </main>
-     <footer>
-          Alapalkki
-     </footer>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Riikka Kokko</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
 
+    .row.content {height: 450px}
+
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Etusivu</a></li>
+        <li><a href="#">Lisätietoja minusta</a></li>
+        <li><a href="#">Projektit</a></li>
+        <li><a href="#">Yhteystiedot</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Kirjaudu</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   
-  
-  
-  </body>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Linkki 1</a></p>
+      <p><a href="#">Linkki 2</a></p>
+      <p><a href="#">Linkki 3</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Tervetuloa minun kotisivuilleni</h1>
+      <hr>
+      <h3>Mukavaa, että eksyit tänne</h3>
+      <p>Sivut ovat vielä työn alla, mutta tule piipahtamaan toistekin, niin varmasti silloin on jo sisältöäkin!</p>
+
+      <br>
+
+      <a class="btn btn-primary" href="#" role="button">Lisätietoja</a>
+
+      <br>
+      <br><br><br>
+      <div class="container text-left">
+        <div class="row row-cols-4">
+          <div class="col">Tähän on myös tulossa vielä lisätietoja jatkossa</div>
+
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Tänne tulee vielä tulevaisuudessa tekstiä</p>
+      </div>
+      <div class="well">
+        <p>Palkkeja, johon on tulossa lisää tekstiä</p>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <p>Alapalkki</p>
+</footer>
+
+</body>
 </html>
