@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/46c7ab94e0.js" crossorigin="anonymous"></script>
+    <title>Riikka Kokko</title>
+</head>
+<body>
+
+<div id="page">
+    <div id="header">
+        Riikka Kokko 
+    </div>
+    
+    <div id="nav">
+        <ul>
+            <li> <a href="index.html" class="active">  Etusivu</a></li>
+            <li><a href="CV_ansioluettelo.html" > CV</a></li>
+            <li><a href="projektit.html"> Projektit</a></li>
+        </ul>
+    </div>
+    
+    <div id="content">
+        <div id="content_left">
+            <div class="pyöristetty-kuva">
+            <img src="RiikkaKokko.png" alt="Riikka Kokko" width="30" height="auto">
+            </div>
+            <h1 class="etusivun-teksti">Riikka Kokko </h1><br>
+            <p class="yhteystieto"><i class="fa-regular fa-envelope"></i><a href="mailto:riikka.kokko@gmail.com">riikka.kokko@gmail.com</a></p>
+            <p class="yhteystieto"><i class="fa-solid fa-mobile-screen"></i>+358 50 4117 493</p>
+            <p class="yhteystieto"><i class="fa-solid fa-house"></i>Lahti, Finland</p>
+            
+            <p>
+                <a href="https://www.linkedin.com/in/riikka-kokko-a768b511b/" target="_blank" class="yhteystieto">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </p>
+            
+            <p>
+                <a href="https://github.com/riikkakokko" target="_blank" class="yhteystieto">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+            <br>
+            <hr>
+            <h1 class="etusivun-teksti">Kielitaito </h1><br>
+            <p>Suomi - äidinkieli</p>
+            <p>Englanti - sujuva</p>
+            <p>Viro - sujuva</p>  
+    
+
+        </div>
+
+
+    
+        <div id="content_right">
+            <h1> Minusta</h1>
+            <p>Kuvailisin itseäni kehittyneeksi ammattilaiseksi, jonka intohimona on teknologia ja asiakaspalvelu. Työskentelen nykyisin Freshdeskin pääkäyttäjän roolissa Visma Solutions Oy:ssä, missä pääsen hyödyntämään laajasti taitojani HTML:ssä, CSS:ssä ja web-analytiikassa. Asiakastyytyväisyyden ja ongelmanratkaisun painotus ovat olleet kulmakiviä urallani, ja olenkin menestyksekkäästi tukennut sekä sisäisiä että ulkoisia sidosryhmiä lukuisissa yrityksissä. Innostun erityisesti tarjoamaan huippuluokan palvelua ja löytämään innovatiivisia ratkaisuja haasteisiin, ja tämä näkyykin jatkuvasti työssäni. <br> 
+                <br>Vapaa-ajallani nautin pyöräilystä, lenkkeilystä sekä äänikirjojen parissa seikkailusta. Rakastan matkustamista ja olenkin kokenut elämäni aikana unohtumattomia seikkailuja yli 20:ssä eri maassa.
+            </p>
+
+                 <section>
+                    <h2>Taidot</h2>
+                    <div class="skills">
+                        <div class="skill">HTML & CSS</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">Asiakaspalvelun järjestelmät</div>
+                    </div>
+                </section>
+                <hr>
+                <a href="CV_ansioluettelo.html" target="_blank">
+                     Tutustu ansioluettelooni
+                </a>
+        </div>
+
+
+        
+   
+    </div> 
+
+    <div id="footer">
+        Riikka Kokko <span id="currentYear"></span>, riikka.kokko@gmail.com
+    </div>
+</div>
+
+<script>
+    var currentYear = new Date().getFullYear(); 
+    document.getElementById("currentYear").textContent = currentYear; 
+</script>
+
+</body>
+</html>

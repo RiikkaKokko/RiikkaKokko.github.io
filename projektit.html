@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/46c7ab94e0.js" crossorigin="anonymous"></script>
+    <title>Riikka Kokko - Projektit</title>
+</head>
+<body>
+
+    <div id="page">
+        <div id="header">
+            Riikka Kokko 
+        </div>
+        
+        <div id="nav">
+            <ul>
+                <li> <a href="index.html">  Etusivu</a></li>
+                <li><a href="CV_ansioluettelo.html" > CV</a></li>
+                <li><a href="projektit.html" class="active"> Projektit </a></li>
+            </ul>
+        </div>
+
+    <div class="container">
+        <header>
+            <h1>Projektit</h1>
+        </header>
+
+        <hr>
+
+        <section>
+            <h3><a href="https://medium.com/@riikkakokko" target="_blank">Postaukset Mediumissa</a></h3>
+            <h3><a href="https://github.com/RiikkaKokko?tab=repositories" target="_blank">Repositoriot Githubissa</a></h3>
+        </section>
+
+
+        
+    </div>
+
+    <div id="footer">
+        Riikka Kokko <span id="currentYear"></span>, riikka.kokko@gmail.com
+    </div>
+</div>
+
+<script>
+    var currentYear = new Date().getFullYear(); 
+    document.getElementById("currentYear").textContent = currentYear; 
+</script>
+
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+    
+        accordions.forEach(accordion => {
+            const header = accordion.querySelector('h3');
+    
+            header.addEventListener('click', () => {
+                const content = accordion.querySelector('.accordion-content');
+                content.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
